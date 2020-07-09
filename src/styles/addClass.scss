@@ -1,0 +1,7 @@
+@each $i, $day in $days {
+  .calendar-#{$day} {
+    div:first-child {
+      margin-left: ($blockSize + $gap) * $i - $blockSize - $gap;
+    }
+  }
+}
